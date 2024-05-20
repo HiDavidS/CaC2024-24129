@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Contacto</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Contacto</h1>
+        <p>Por favor, complete los siguientes campos con la información requerida para que podamos ponernos en contacto con usted.</p>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <p class="warning" id="warning-nombre"></p>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <p class="warning" id="warning-email"></p>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                <p class="warning" id="warning-telefono"></p>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="">Seleccionar...</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Reclamo">Reclamo</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <p class="warning" id="warning-motivo"></p>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Escribe tu mensaje..."></textarea>
+                <p class="warning" id="warning-mensaje"></p>
+
+                <div class="form-1">
+                <label for="imagen">Adjuntar imagen:</label><br><br>
+                <input type="file" id="imagen" name="imagen"><br><br>
+                <input type="checkbox" id="suscripcion" name="suscripcion" value="suscrito">
+                <label for="suscripcion">Deseo suscribirme al boletín informativo.</label>
+                </div>
+
+                <div class="btn" id="warning">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+    </form>
+</body>
+</html>
